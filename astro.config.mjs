@@ -6,13 +6,14 @@ import react from '@astrojs/react';
 export default defineConfig({
   outDir: './docs',
   site: 'https://docs.centralmind.ai',
-  favicon: './public/favicon.ico',
   build: {
     assets: 'app_assets',
   },
   integrations: [
     starlight({
       title: 'CentralMind',
+      logo: { dark: './src/assets/logo-dark.svg', light: './src/assets/logo-light.svg' },
+
       customCss: ['./src/styles/custom.css'],
       sidebar: [
         {
