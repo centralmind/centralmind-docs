@@ -6,7 +6,7 @@ import react from '@astrojs/react';
 export default defineConfig({
   outDir: './docs',
   site: 'https://docs.centralmind.ai',
-
+  favicon: './public/favicon.ico',
   build: {
     assets: 'app_assets',
   },
@@ -17,7 +17,15 @@ export default defineConfig({
       sidebar: [
         {
           label: 'General',
-          items: [{ label: 'Introduction', slug: 'general/introduction' }],
+          items: [{ label: 'Introduction', slug: '' }],
+        },
+        {
+          label: 'Terms of Service',
+          items: [
+            { label: 'Terms of Service', slug: 'content/terms' },
+            { label: 'Privacy Policy', slug: 'content/privacy' },
+            { label: 'Cookie Policy', slug: 'content/cookie' },
+          ],
         },
       ],
     }),
