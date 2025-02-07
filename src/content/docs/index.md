@@ -5,60 +5,22 @@ description: 'Build a data platform for LLMs in one day. Securely connect any da
 
 Build secure APIs for LLMs. Connect any data source (SQL, NoSQL, Streaming, SaaS, S3, APIs), and let AI handle the rest. With built-in PII cleaning, Role-Based Security, auditing, and full observability, your data stays safe and compliant. Supports MCP, REST/GraphQL. 🚀
 
----
+## Generated API Optimized for LLMs
 
-## Intelligence Backbone
+Designed specifically for **AI and LLM-driven applications**, the system supports multiple access protocols including **Model Context Protocol (MCP), REST, and OpenAI Custom Actions**, enriched with additional metadata.
 
-Transform your database into a secure, AI-ready API in minutes—no coding required. With built-in security, automated PII redaction, and seamless AI integrations, you get fast, scalable, and GDPR-compliant data access without the risks of direct SQL queries.
+## PII and Sensitive Data Reduction
 
----
+Automatically cleans **PII and sensitive data** in accordance with **GDPR**, using **LLM-powered or built-in static filters** to redact and block unauthorized access.
 
-## Features and Benefits
+## Built-in Audit, Security, and RLS
 
-### Automatic No-Code API Generation
+Offers **real-time monitoring, logging, and anomaly detection** with **Row Level Security (RLS)** for granular control, plus **audit logs and alerts** for suspicious activity.
 
-- Easily create AI-optimized APIs **without writing a single line of code**.
-- Connect databases (SQL, S3, APIs) and generate fully functional APIs automatically.
-- **Reduce time-to-market** and operational complexity.
+## On-Premise or Cloud Deployment
 
-### Secure Alternative to Direct SQL Access
+Deploy **on-premise, in the cloud, or as SaaS**. Integrates with AI tools like **LangChain, Anthropic, OpenAI, Olama, and Hugging Face** to streamline data processing.
 
-- Prevent security breaches and data leaks.
-- **Role-Based Security (RLS)** ensures only authorized queries execute.
-- Blocks potentially harmful SQL operations.
+## Open Source
 
-### Support for AI-Oriented Standards
-
-- **MCP, REST, GraphQL, OpenAI Custom Actions** support.
-- Seamless integrations with advanced AI models and automation tools.
-
-### Automated PII Removal for GDPR Compliance
-
-- **LLM-powered techniques** remove personally identifiable information (PII).
-- Ensures compliance with GDPR and other regulations.
-
-### Built-in Observability and Auditing
-
-- **Real-time monitoring** and **request logging**.
-- Tracks API interactions with **detailed audit logs**.
-- Flags and blocks suspicious requests automatically.
-
-### Caching and Load Control
-
-- **Automatic query caching** to improve performance.
-- Reduces database stress and **ensures fast response times**.
-
-### Flexible and Multi-Platform Support
-
-- Integrates with **LangChain, RAG frameworks, and AI providers** (Anthropic, Mistral, Hugging Face).
-- Supports a wide range of AI-powered applications.
-
-### Open-Source Deployment for Enterprises
-
-- On-premises deployment for full control over **infrastructure, security, and transparency**.
-- Maintains **full ownership of AI-powered data workflows**.
-
-### Intelligent Access Management
-
-- **Fine-grained access control** with API permissions at the user level.
-- Prevents unauthorized queries and ensures compliance with security policies.
+The **API generator and API runtime framework** are **open-source**, boosting **trust and transparency** while giving you **full control** over your infrastructure and security.
