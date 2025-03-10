@@ -95,7 +95,7 @@
 <li>🔒 <strong>PII Protection</strong> – Implements <a href="https://docs.centralmind.ai/plugins/pii_remover/">regex plugin</a> or <a href="https://docs.centralmind.ai/plugins/presidio_anonymizer/">Microsoft Presidio plugin</a> for PII and sensitive data redaction</li>
 <li>⚡ <strong>Flexible Configuration</strong> – Easily extensible via YAML configuration and plugin system</li>
 <li>🐳 <strong>Deployment Options</strong> – Run as a binary or Docker container with ready-to-use <a href="https://docs.centralmind.ai/helm/gateway/">Helm chart</a></li>
-<li>🤖 <strong>Multiple AI Providers Support</strong> - Support for <a href="https://docs.centralmind.ai/providers/openai">OpenAI</a>, <a href="https://docs.centralmind.ai/providers/anthropic">Anthropic</a>, <a href="https://docs.centralmind.ai/providers/bedrock">Amazon Bedrock</a> &#x26; <a href="https://docs.centralmind.ai/providers/anthropic-vertexai">Google VertexAI</a></li>
+<li>🤖 <strong>Multiple AI Providers Support</strong> - Support for <a href="https://docs.centralmind.ai/providers/openai">OpenAI</a>, <a href="https://docs.centralmind.ai/providers/anthropic">Anthropic</a>, <a href="https://docs.centralmind.ai/providers/bedrock">Amazon Bedrock</a>, <a href="https://docs.centralmind.ai/providers/gemini">Google Gemini</a> &#x26; <a href="https://docs.centralmind.ai/providers/anthropic-vertexai">Google VertexAI</a></li>
 <li>📦 <strong>Local &#x26; On-Premises</strong> – Support for <a href="https://docs.centralmind.ai/providers/local-models/">self-hosted LLMs</a> through configurable AI endpoints and models</li>
 <li>🔑 <strong>Row-Level Security (RLS)</strong> – Fine-grained data access control using <a href="https://docs.centralmind.ai/plugins/lua_rls/">Lua scripts</a></li>
 <li>🔐 <strong>Authentication Options</strong> – Built-in support for <a href="https://docs.centralmind.ai/plugins/api_keys/">API keys</a> and <a href="https://docs.centralmind.ai/plugins/oauth/">OAuth</a></li>
@@ -154,7 +154,9 @@ or <a href="https://docs.centralmind.ai/docs/content/integration/cursor/">Cursor
 <li><a href="https://docs.centralmind.ai/providers/anthropic">Anthropic</a></li>
 <li><a href="https://docs.centralmind.ai/providers/bedrock">Amazon Bedrock</a></li>
 <li><a href="https://docs.centralmind.ai/providers/anthropic-vertexai">Google Vertex AI (Anthropic)</a></li>
+<li><a href="https://docs.centralmind.ai/providers/gemini">Google Gemini</a></li>
 </ul>
+<p><a href="https://docs.centralmind.ai/providers/gemini">Google Gemini</a> provides a generous <strong>free tier</strong>.</p>
 <p>Configure AI provider authorization. For OpenAI, set an API key.</p>
 <div class="expressive-code"><figure class="frame is-terminal not-content"><figcaption class="header"><span class="title"></span><span class="sr-only">Terminal window</span></figcaption><pre data-language="bash"><code><div class="ec-line"><div class="code"><span style="--0:#C792EA;--1:#8D46B4">export</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#C5E478;--1:#3C63B3">OPENAI_API_KEY</span><span style="--0:#C792EA;--1:#8D46B4">=</span><span style="--0:#D9F5DD;--1:#111111">'</span><span style="--0:#ECC48D;--1:#9B504E">yourkey</span><span style="--0:#D9F5DD;--1:#111111">'</span></div></div></code></pre><div class="copy"><button title="Copy to clipboard" data-copied="Copied!" data-code="export OPENAI_API_KEY=&#x27;yourkey&#x27;"><div></div></button></div></figure></div>
 <ol start="3">
