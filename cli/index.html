@@ -109,14 +109,24 @@
 <p><strong>Usage:</strong></p>
 <div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="plaintext"><code><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gateway discover [flags]</span></div></div></code></pre><div class="copy"><button title="Copy to clipboard" data-copied="Copied!" data-code="gateway discover [flags]"><div></div></button></div></figure></div>
 <p><strong>Flags:</strong></p>
+<p>Flags:</p>
 <ul>
-<li><code dir="auto">--database-type</code> - Type of database to connect to</li>
-<li><code dir="auto">--tables</code> - Specific tables to include in the discovery, you can specify comma-separated list eg “sales,orders,customers”</li>
-<li><code dir="auto">--ai-api-key</code> - API key for AI service, for instance OpenAI key</li>
-<li><code dir="auto">--ai-endpoint</code> - Endpoint for AI service, compatible with OpenAI api schema</li>
-<li><code dir="auto">--ai-model</code> - Model name for AI service, eg o3-mini</li>
-<li><code dir="auto">--output</code> - Output file path for generated configuration</li>
-<li><code dir="auto">--extra-prompt</code> - Additional instructions for the AI model</li>
+<li><code dir="auto">--config</code> - Path to connection yaml file. Default is “connection.yaml”.</li>
+<li><code dir="auto">--tables</code> - Comma-separated list of tables to include (e.g. ‘table1,table2,table3’)</li>
+<li><code dir="auto">--ai-provider</code> - AI provider to use. Default is “openai”.</li>
+<li><code dir="auto">--ai-endpoint</code> - Custom OpenAI-compatible API endpoint URL</li>
+<li><code dir="auto">--ai-api-key</code> - AI API token</li>
+<li><code dir="auto">--bedrock-region</code> - Bedrock region</li>
+<li><code dir="auto">--vertexai-region</code> - Vertex AI region</li>
+<li><code dir="auto">--vertexai-project</code> - Vertex AI project</li>
+<li><code dir="auto">--ai-model</code> - AI model to use</li>
+<li><code dir="auto">--ai-max-tokens</code> - Maximum tokens to use. Default is 0.</li>
+<li><code dir="auto">--ai-temperature</code> - AI temperature. Default is -1.0.</li>
+<li><code dir="auto">--ai-reasoning</code> - Enable reasoning. Default is true.</li>
+<li><code dir="auto">--output</code> - Resulted YAML path. Default is “gateway.yaml”.</li>
+<li><code dir="auto">--prompt</code> - Custom input to generate APIs. Default is “generate reasonable set of APIs for this data”.</li>
+<li><code dir="auto">--prompt-file</code> - Path to save the generated prompt.</li>
+<li><code dir="auto">--llm-log</code> - Path to save the raw LLM response.</li>
 </ul>
 <h3 id="connectors"><code dir="auto">connectors</code></h3>
 <p>Lists all available database connectors.</p>
