@@ -24,6 +24,7 @@
 - [Neon](https://docs.centralmind.ai/connectors/neon)
 - [Mysql](https://docs.centralmind.ai/connectors/mysql)
 - [Mssql](https://docs.centralmind.ai/connectors/mssql)
+- [Mongodb](https://docs.centralmind.ai/connectors/mongodb)
 - [Index](https://docs.centralmind.ai/connectors/index)
 - [Elasticsearch](https://docs.centralmind.ai/connectors/elasticsearch)
 - [Duckdb](https://docs.centralmind.ai/connectors/duckdb)
