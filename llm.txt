@@ -38,6 +38,7 @@
 - [Index](https://docs.centralmind.ai/providers/anthropic-vertexai/index)
 - [Index](https://docs.centralmind.ai/providers/anthropic/index)
 - [Index](https://docs.centralmind.ai/helm/gateway/index)
+- [Index](https://docs.centralmind.ai/example/snowflake/index)
 - [Index](https://docs.centralmind.ai/example/simple/index)
 - [Index](https://docs.centralmind.ai/example/postgresql-ecommerce-sample/index)
 - [Index](https://docs.centralmind.ai/example/postgresql-dvdstore-sample/index)
