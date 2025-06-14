@@ -101,15 +101,14 @@ Enrich your AI agents with data from your database using remote function/tool ca
 <li>⚡ <strong>Automatic API Generation</strong> – Creates APIs automatically using LLM based on table schema and sampled data</li>
 <li>🗄️ <strong>Structured Database Support</strong> – Supports <a href="https://docs.centralmind.ai/connectors/postgres/">PostgreSQL</a>, <a href="https://docs.centralmind.ai/connectors/mysql/">MySQL</a>, <a href="https://docs.centralmind.ai/connectors/clickhouse/">ClickHouse</a>, <a href="https://docs.centralmind.ai/connectors/snowflake/">Snowflake</a>, <a href="https://docs.centralmind.ai/connectors/mssql/">MSSQL</a>, <a href="https://docs.centralmind.ai/connectors/bigquery/">BigQuery</a>, <a href="https://docs.centralmind.ai/connectors/oracle/">Oracle Database</a>, <a href="https://docs.centralmind.ai/connectors/sqlite/">SQLite</a>, <a href="https://docs.centralmind.ai/connectors/sqlite/">ElasticSearch</a></li>
 <li>🌍 <strong>Multiple Protocol Support</strong> – Provides APIs as REST or MCP Server including SSE mode</li>
-<li>📜 <strong>API Documentation</strong> – Auto-generated Swagger documentation and OpenAPI 3.1.0 specification</li>
-<li>🔒 <strong>PII Protection</strong> – Implements <a href="https://docs.centralmind.ai/plugins/pii_remover/">regex plugin</a> or <a href="https://docs.centralmind.ai/plugins/presidio_anonymizer/">Microsoft Presidio plugin</a> for PII and sensitive data redaction</li>
-<li>⚡ <strong>Flexible Configuration</strong> – Easily extensible via YAML configuration and plugin system</li>
-<li>🐳 <strong>Deployment Options</strong> – Run as a binary or Docker container with ready-to-use <a href="https://docs.centralmind.ai/helm/gateway/">Helm chart</a></li>
-<li>🤖 <strong>Multiple AI Providers Support</strong> - Support for <a href="https://docs.centralmind.ai/providers/openai">OpenAI</a>, <a href="https://docs.centralmind.ai/providers/anthropic">Anthropic</a>, <a href="https://docs.centralmind.ai/providers/bedrock">Amazon Bedrock</a>, <a href="https://docs.centralmind.ai/providers/gemini">Google Gemini</a> &#x26; <a href="https://docs.centralmind.ai/providers/anthropic-vertexai">Google VertexAI</a></li>
-<li>📦 <strong>Local &#x26; On-Premises</strong> – Support for <a href="https://docs.centralmind.ai/providers/local-models/">self-hosted LLMs</a> through configurable AI endpoints and models</li>
-<li>🔑 <strong>Row-Level Security (RLS)</strong> – Fine-grained data access control using <a href="https://docs.centralmind.ai/plugins/lua_rls/">Lua scripts</a></li>
 <li>🔐 <strong>Authentication Options</strong> – Built-in support for <a href="https://docs.centralmind.ai/plugins/api_keys/">API keys</a> and <a href="https://docs.centralmind.ai/plugins/oauth/">OAuth</a></li>
+<li>🔒 <strong>PII Protection</strong> – Implements <a href="https://docs.centralmind.ai/plugins/pii_remover/">regex plugin</a> or <a href="https://docs.centralmind.ai/plugins/presidio_anonymizer/">Microsoft Presidio plugin</a> for PII and sensitive data redaction</li>
 <li>👀 <strong>Comprehensive Monitoring</strong> – Integration with <a href="https://docs.centralmind.ai/plugins/otel/">OpenTelemetry (OTel)</a> for request tracking and audit trails</li>
+<li>📦 <strong>Local &#x26; On-Premises</strong> – Support for <a href="https://docs.centralmind.ai/providers/local-models/">self-hosted LLMs</a> through configurable AI endpoints and models</li>
+<li>🤖 <strong>Multiple AI Providers Support</strong> - Support for <a href="https://docs.centralmind.ai/providers/openai">OpenAI</a>, <a href="https://docs.centralmind.ai/providers/anthropic">Anthropic</a>, <a href="https://docs.centralmind.ai/providers/bedrock">Amazon Bedrock</a>, <a href="https://docs.centralmind.ai/providers/gemini">Google Gemini</a> &#x26; <a href="https://docs.centralmind.ai/providers/anthropic-vertexai">Google VertexAI</a></li>
+<li>⚡ <strong>Flexible Configuration</strong> – Easily extensible via YAML configuration and plugin system</li>
+<li>📜 <strong>API Documentation</strong> – Auto-generated Swagger documentation and OpenAPI 3.1.0 specification</li>
+<li>🔑 <strong>Row-Level Security (RLS)</strong> – Fine-grained data access control using <a href="https://docs.centralmind.ai/plugins/lua_rls/">Lua scripts</a></li>
 <li>🏎️ <strong>Performance Optimization</strong> – Implements time-based and <a href="https://docs.centralmind.ai/plugins/lru_cache/">LRU caching</a> strategies</li>
 </ul>
 <h2 id="how-it-works">How it Works</h2>
@@ -152,9 +151,7 @@ or <a href="https://docs.centralmind.ai/docs/content/integration/cursor/">Cursor
 </div></div><div class="ec-line"><div class="code"><span style="--0:#809191;--1:#616671"># Build the project</span></div></div><div class="ec-line"><div class="code"><span style="--0:#82AAFF;--1:#3C63B3">go</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#3C63B3">build</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#3C63B3">.</span></div></div></code></pre><div class="copy"><button title="Copy to clipboard" data-copied="Copied!" data-code="git clone https://github.com/centralmind/gateway.gitcd gatewaygo mod downloadgo build ."><div></div></button></div></figure></div>
 <h2 id="api-generation">API Generation</h2>
 <p>Gateway uses LLM models to generate your API configuration. Follow these steps:</p>
-<ol>
-<li>Choose one of our supported AI providers:</li>
-</ol>
+<p>Choose one of our supported AI providers:</p>
 <ul>
 <li><a href="https://docs.centralmind.ai/providers/openai">OpenAI</a> and all OpenAI-compatible providers</li>
 <li><a href="https://docs.centralmind.ai/providers/anthropic">Anthropic</a></li>
@@ -162,7 +159,7 @@ or <a href="https://docs.centralmind.ai/docs/content/integration/cursor/">Cursor
 <li><a href="https://docs.centralmind.ai/providers/anthropic-vertexai">Google Vertex AI (Anthropic)</a></li>
 <li><a href="https://docs.centralmind.ai/providers/gemini">Google Gemini</a></li>
 </ul>
-<p><a href="https://docs.centralmind.ai/providers/gemini">Google Gemini</a> provides a generous <strong>free tier</strong>. You can obtain an API key by visiting Google AI Studio:</p>
+<p>Google Gemini provides a generous <strong>free tier</strong>. You can obtain an API key by visiting Google AI Studio:</p>
 <ul>
 <li><a href="https://aistudio.google.com/apikey">Google AI Studio</a></li>
 </ul>
@@ -199,7 +196,7 @@ or <a href="https://docs.centralmind.ai/docs/content/integration/cursor/">Cursor
 we are planning the following features:</p>
 <h4 id="database-and-connectivity">Database and Connectivity</h4>
 <ul>
-<li>🗄️ <strong>Extended Database Integrations</strong> - Redshift, S3 (Iceberg and Parquet), Oracle DB, Microsoft SQL Server, Elasticsearch</li>
+<li>🗄️ <strong>Extended Database Integrations</strong> - Databricks, Redshift, S3 (Iceberg and Parquet), Oracle DB, Microsoft SQL Server, Elasticsearch</li>
 <li>🔑 <strong>SSH tunneling</strong> - ability to use jumphost or ssh bastion to tunnel connections</li>
 </ul>
 <h4 id="enhanced-functionality">Enhanced Functionality</h4>
